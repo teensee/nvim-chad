@@ -2,14 +2,14 @@ return {
     {
         "stevearc/conform.nvim",
         -- event = 'BufWritePre', -- uncomment for format on save
-        opts = require "configs.conform"
+        opts = require "configs.conform",
     },
     -- These are some examples, uncomment them if you want to see them work!
     {
         "neovim/nvim-lspconfig",
         config = function()
             require "configs.lspconfig"
-        end
+        end,
     },
     {
         "nvim-treesitter/nvim-treesitter",
@@ -35,26 +35,26 @@ return {
                 "markdown",
                 "bash",
                 "toml",
-                "json"
-            }
-        }
+                "json",
+            },
+        },
     },
     {
         "nvim-tree/nvim-tree.lua",
         opts = {
             filters = {
                 dotfiles = false,
-                custom = { "^.git$", "^.idea$"},
+                custom = { "^.git$", "^.idea$" },
             },
             renderer = {
-                group_empty = true
+                group_empty = true,
             },
             git = {
-                ignore = false
+                ignore = false,
             },
             view = {
-                width = 50
+                width = 50,
             },
         },
-    }
+    },
 }
