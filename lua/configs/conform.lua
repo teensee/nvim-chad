@@ -1,10 +1,14 @@
 local options = {
     formatters_by_ft = {
         lua = { "stylua" },
+        -- golang
         go = { "gofumpt", "goimports-reviser", "golines" },
         gomod = { "gofumpt", "goimports-reviser" },
         gowork = { "gofumpt", "goimports-reviser" },
         gotmpl = { "gofumpt", "goimports-reviser" },
+
+        -- php
+        -- todo: ....
 
         -- css = { "prettier" },
         -- html = { "prettier" },
