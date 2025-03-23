@@ -12,3 +12,5 @@ o.expandtab = true
 o.autoindent = true
 
 o.backspace = "indent,eol,start"
+
+o.conceallevel = 1 -- добавлено из-за obsidian.vim

@@ -1,31 +1,28 @@
 return {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+        ensure_installed = {
+            "vim",
+            "lua",
+            "vimdoc",
+            -- html
+            "html",
+            "css",
+            -- main languages
+            "php",
+            "phpdoc",
 
-    {
-        "nvim-treesitter/nvim-treesitter",
-        opts = {
-            ensure_installed = {
-                "vim",
-                "lua",
-                "vimdoc",
-                -- html
-                "html",
-                "css",
-                -- main languages
-                "php",
-                "phpdoc",
+            "go",
+            "gomod",
+            "gosum",
+            "gowork",
 
-                "go",
-                "gomod",
-                "gosum",
-                "gowork",
-
-                -- config languages
-                "yaml",
-                "markdown",
-                "bash",
-                "toml",
-                "json",
-            },
+            -- config languages
+            "yaml",
+            "markdown",
+            "bash",
+            "toml",
+            "json",
         },
     },
 }
