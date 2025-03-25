@@ -10,6 +10,9 @@ local options = {
         -- php
         -- todo: ....
 
+        -- markdown
+        markdown = { "markdownlint", "prettier" }
+
         -- css = { "prettier" },
         -- html = { "prettier" },
     },
