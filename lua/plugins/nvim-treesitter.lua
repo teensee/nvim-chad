@@ -5,10 +5,12 @@ return {
             "vim",
             "lua",
             "vimdoc",
-            -- html
+
+            -- Web
             "html",
             "css",
-            -- main languages
+
+            -- Main languages
             "php",
             "phpdoc",
 
@@ -17,12 +19,21 @@ return {
             "gosum",
             "gowork",
 
-            -- config languages
+            -- Config languages
             "yaml",
             "markdown",
             "bash",
             "toml",
             "json",
+        },
+        auto_install = true, -- Автоматически устанавливать недостающие парсеры
+        sync_install = false, -- Синхронизация парсеров вручную, чтобы избежать подвисаний
+        highlight = {
+            enable = true, -- Включение подсветки кода
+            additional_vim_regex_highlighting = false,
+        },
+        indent = {
+            enable = true, -- Улучшенная автоматическая табуляция
         },
     },
 }

@@ -1,4 +1,4 @@
-local options = {
+return {
     formatters_by_ft = {
         lua = { "stylua" },
         -- golang
@@ -11,7 +11,7 @@ local options = {
         -- todo: ....
 
         -- markdown
-        markdown = { "markdownlint", "prettier" }
+        markdown = { "markdownlint", "prettier" },
 
         -- css = { "prettier" },
         -- html = { "prettier" },
@@ -32,5 +32,3 @@ local options = {
         lsp_fallback = true,
     },
 }
-
-return options

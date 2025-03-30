@@ -9,6 +9,7 @@ local servers = {
     cssls = { cmd = { "cssls" } },
     gopls = {
         cmd = { "gopls" },
+        root_pattern = lspconfig.util.root_pattern("go.mod", ".git"),
         filetypes = { "go", "gomod", "gowork", "gotmpl" },
         settings = {
             gopls = {
@@ -25,6 +26,10 @@ local servers = {
         filetypes = { "php" },
         root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
     },
+    -- intelephense = {
+    --     filetypes = { "php" },
+    --     root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
+    -- },
 }
 
 for name, opts in pairs(servers) do
