@@ -17,7 +17,9 @@ local servers = {
                     shadow = true, -- check shadowing
                 },
                 staticcheck = true, -- Enable staticcheck
-                gofumpt = true, -- включаю автоформатирвоание
+                gofumpt = false, -- включаю автоформатирвоание
+                completeUnimported = true,
+                usePlaceholders = true,
             },
         },
     },

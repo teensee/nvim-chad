@@ -8,6 +8,7 @@ o.tabstop = 4 -- количество пробелов, соответствую
 o.shiftwidth = 4 -- количество пробелов для сдвига при автоформатировании
 o.expandtab = true -- использовать пробелы вместо табуляторов
 o.autoindent = true -- автоматически сохранять отступы при новых строках
+o.scrolloff = 10
 
 o.backspace = "indent,eol,start" -- возвращение к предыдущим элементам при нажатии Backspace
 
@@ -40,3 +41,5 @@ o.history = 10000 -- увеличивает количество команд в
 o.termguicolors = true -- включение 24-битной цветовой схемы
 o.background = "dark" -- установка темной цветовой схемы
 
+o.foldmethod = 'indent'
+o.foldlevelstart = 99

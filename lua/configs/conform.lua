@@ -2,7 +2,7 @@ return {
     formatters_by_ft = {
         lua = { "stylua" },
         -- golang
-        go = { "gofumpt", "goimports-reviser", "golines" },
+        go = { "gofmt", "goimports-reviser", "golines" },
         gomod = { "gofumpt", "goimports-reviser" },
         gowork = { "gofumpt", "goimports-reviser" },
         gotmpl = { "gofumpt", "goimports-reviser" },
@@ -20,9 +20,9 @@ return {
     formatters = {
         ["goimports-reviser"] = {
             prepend_args = { "-rm-unused" },
-        },
+         },
         golines = {
-            prepend_args = { "--max-len=80" },
+            prepend_args = { "--max-len=120" },
         },
     },
 
