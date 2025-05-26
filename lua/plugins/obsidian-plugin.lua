@@ -1,5 +1,5 @@
 return {
-    "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     version = "*", -- рекомендуемая версия — последняя стабильная
     lazy = true,
     ft = "markdown",
@@ -10,11 +10,13 @@ return {
         workspaces = {
             {
                 name = "ObsidianNotes",
-                path = vim.fn.expand("~/Library/Mobile Documents/iCloud~md~obsidian/Documents/ObsidianNotes"),
+                path = vim.fn.expand "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/ObsidianNotes",
             },
         },
         completion = {
-            nvim_cmp = true, -- интеграция с nvim-cmp для автодополнения ссылок
+            nvim_cmp = false, -- интеграция с nvim-cmp для автодополнения ссылок
+            blink = true,
+            min_chars = 2,
         },
         daily_notes = {
             folder = "Daily", -- Папка для ежедневных заметок

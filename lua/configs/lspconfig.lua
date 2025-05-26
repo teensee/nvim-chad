@@ -23,15 +23,15 @@ local servers = {
             },
         },
     },
-    phpactor = {
-        cmd = { "phpactor", "language-server" },
-        filetypes = { "php" },
-        root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
-    },
-    -- intelephense = {
+    -- phpactor = {
+    --     cmd = { "phpactor", "language-server" },
     --     filetypes = { "php" },
     --     root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
     -- },
+    intelephense = {
+        filetypes = { "php" },
+        root_dir = lspconfig.util.root_pattern("composer.json", ".git"),
+    },
 }
 
 for name, opts in pairs(servers) do
