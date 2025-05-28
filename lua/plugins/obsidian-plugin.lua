@@ -14,7 +14,7 @@ return {
             },
         },
         completion = {
-            nvim_cmp = false, -- интеграция с nvim-cmp для автодополнения ссылок
+            nvim_cmp = false,
             blink = true,
             min_chars = 2,
         },

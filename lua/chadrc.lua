@@ -3,16 +3,18 @@
 -- Please read that file to know all available options :(
 
 ---@type ChadrcConfig
-local M = {}
-
-M.base46 = {
-    theme = "onedark",
-}
-
-M.nvdash = { load_on_startup = true }
-M.ui = {
-    tabufline = {
-        lazyload = false,
+local M = {
+    base46 = {
+        -- theme = "onedark",
+        theme = "everblush",
+        theme_toggle = { "everblush", "catppuccin" },
+    },
+    nvdash = { load_on_startup = true },
+    ui = {
+        tabufline = {
+            lazyload = false,
+        },
+        telescope = { style = "bordered" },
     },
 }
 
