@@ -19,6 +19,8 @@ return {
             "gosum",
             "gowork",
 
+            "python",
+
             -- Config languages
             "yaml",
             "markdown",

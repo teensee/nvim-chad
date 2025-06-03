@@ -22,6 +22,7 @@ local servers = {
             },
         },
     },
+    pyright = {},
 
     -- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/phpactor.lua#L7
     phpactor = {
