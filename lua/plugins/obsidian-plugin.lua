@@ -1,6 +1,6 @@
 return {
     "obsidian-nvim/obsidian.nvim",
-    version = "*", -- рекомендуемая версия — последняя стабильная
+    version = "*",
     lazy = true,
     ft = "markdown",
     dependencies = {
