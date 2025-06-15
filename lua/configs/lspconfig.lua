@@ -16,10 +16,26 @@ local servers = {
                     shadow = true, -- check shadowing
                 },
                 staticcheck = true, -- Enable staticcheck
-                gofumpt = false, -- включаю автоформатирвоание
+                gofumpt = true, -- включаю автоформатирвоание
                 completeUnimported = true,
                 usePlaceholders = true,
             },
+        },
+    },
+    templ = {
+        default_config = {
+            cmd = { "templ", "lsp" },
+            filetypes = { "templ" },
+            root_dir = function(fname)
+                return lspconfig.util.root_pattern("go.work", "go.mod", ".git")(fname)
+            end,
+        },
+        docs = {
+            description = [[
+https://templ.guide
+
+The official language server for the templ HTML templating language.
+]],
         },
     },
     pyright = {},

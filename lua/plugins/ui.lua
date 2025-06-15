@@ -4,8 +4,8 @@ return {
     event = "VeryLazy",
     opts = {
         cmdline = { enabled = true },
-        messages = { enabled = true },
-        popupmenu = { enabled = false },
+        messages = { enabled = true }, -- conflict with go package
+        popupmenu = { enabled = true },
         notify = { enabled = true },
     },
     dependencies = {

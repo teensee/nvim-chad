@@ -1,4 +1,5 @@
 return {
+    -- golang
     {
         "ray-x/go.nvim",
         dependencies = {
@@ -7,12 +8,16 @@ return {
             "nvim-treesitter/nvim-treesitter",
         },
         config = function()
-            require("go").setup()
+            require("go").setup {
+                tag_transform = "camelcase",
+            }
         end,
         event = { "CmdlineEnter" },
         ft = { "go", "gomod" },
         build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
     },
+
+    -- php
     {
         "phpactor/phpactor",
         enabled = false,
@@ -23,6 +28,8 @@ return {
             -- Опциональная интеграция с popup и т.п.
         end,
     },
+
+    -- snippets
     {
         "L3MON4D3/LuaSnip",
         version = "v2.*",
