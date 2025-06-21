@@ -5,10 +5,10 @@ return {
         -- golang
         templ = {},
 
-        go = { "gofmt", "goimports-reviser", "golines" },
-        gomod = { "gofumpt", "goimports-reviser" },
-        gowork = { "gofumpt", "goimports-reviser" },
-        gotmpl = { "gofumpt", "goimports-reviser" },
+        go = { "gofmt", "goimports", "golines" },
+        gomod = { "gofumpt", "goimports" },
+        gowork = { "gofumpt", "goimports" },
+        gotmpl = { "gofumpt", "goimports" },
 
         -- php
         -- todo: ....

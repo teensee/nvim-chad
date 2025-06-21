@@ -9,12 +9,21 @@ local M = {
         theme = "everblush",
         theme_toggle = { "everblush", "catppuccin" },
     },
-    nvdash = { load_on_startup = true },
     ui = {
+        cmp = {
+            icons_left = true,
+        },
         tabufline = {
             lazyload = false,
         },
         telescope = { style = "bordered" },
+        statusline = {
+            theme = "default",
+            separator_style = "block",
+        },
+    },
+    nvdash = {
+        load_on_startup = true,
     },
 }
 

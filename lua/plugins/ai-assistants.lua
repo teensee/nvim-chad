@@ -48,4 +48,36 @@ return {
             no_auto_close = false,
         },
     },
+    {
+        "TabbyML/vim-tabby",
+        enabled = false,
+        lazy = false,
+        dependencies = {
+            "neovim/nvim-lspconfig",
+        },
+        init = function()
+            vim.g.tabby_agent_start_command = { "npx", "tabby-agent", "--stdio" }
+            vim.g.tabby_inline_completion_trigger = "auto"
+        end,
+    },
+    {
+        "github/copilot.vim",
+        event = "VeryLazy",
+        config = function()
+            -- Отключаем стандартный Tab mapping
+            vim.g.copilot_no_tab_map = true
+
+            -- Маппим принятие предложения на Ctrl+j
+            vim.keymap.set("i", "<C-j>", 'copilot#Accept("")', {
+                expr = true,
+                replace_keycodes = false,
+            })
+
+            -- Дополнительные полезные маппинги
+            vim.keymap.set("i", "<C-l>", "<Plug>(copilot-accept-word)") -- принять слово
+            vim.keymap.set("i", "<C-;>", "<Plug>(copilot-next)") -- следующее предложение
+            vim.keymap.set("i", "<C-,>", "<Plug>(copilot-previous)") -- предыдущее предложение
+            vim.keymap.set("i", "<C-\\>", "<Plug>(copilot-dismiss)") -- отклонить предложение
+        end,
+    },
 }
