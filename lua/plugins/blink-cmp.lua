@@ -3,9 +3,10 @@ return {
     -- {
     --     "saghen/blink.cmp",
     --     enabled = true,
+    --     event = { "LspAttach", "InsertEnter" },
     --     opts = {
     --         sources = {
-    --             default = { "lsp", "path", "buffer" },
+    --             default = { "copilot", "lsp", "path", "luasnip", "buffer" },
     --         },
     --     },
     -- },
