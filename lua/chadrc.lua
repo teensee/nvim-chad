@@ -11,7 +11,8 @@ local M = {
     },
     ui = {
         cmp = {
-            icons_left = true,
+            icons_left = false,
+            style = "default",
         },
         tabufline = {
             lazyload = false,
