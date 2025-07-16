@@ -14,8 +14,8 @@ return {
             },
         },
         completion = {
-            nvim_cmp = true,
-            blink = false,
+            nvim_cmp = false,
+            blink = true,
             min_chars = 2,
         },
         daily_notes = {

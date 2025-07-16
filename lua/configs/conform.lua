@@ -11,7 +11,7 @@ return {
         gotmpl = { "gofumpt", "goimports" },
 
         -- php
-        -- todo: ....
+        php = { "php-cs-fixer" },
 
         -- markdown
         markdown = { "markdownlint", "prettier" },
