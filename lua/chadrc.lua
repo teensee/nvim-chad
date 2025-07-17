@@ -6,7 +6,7 @@
 local M = {
     base46 = {
         -- theme = "onedark",
-        theme = "everblush",
+        theme = "catppuccin",
         theme_toggle = { "everblush", "catppuccin" },
     },
     ui = {
