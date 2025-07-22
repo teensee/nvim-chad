@@ -5,6 +5,7 @@ local lspconfig = require "lspconfig"
 
 local servers = {
     html = {},
+
     -- cssls = { cmd = { "cssls" } },
     gopls = {
         cmd = { "gopls" },
