@@ -35,4 +35,7 @@ return {
         version = "v2.*",
         build = "make install_jsregexp",
     },
+
+    -- for python projects
+    -- "venv-selector.nvim"
 }
