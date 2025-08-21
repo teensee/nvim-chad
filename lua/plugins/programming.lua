@@ -22,7 +22,7 @@ return {
         "phpactor/phpactor",
         enabled = false,
         ft = "php",
-        build = "composer install --no-dev --optimize-autoloader",
+        build = "composer install --optimize-autoloader",
         cmd = { "Phpactor" }, -- чтобы команду :Phpactor регистрировать
         config = function()
             -- Опциональная интеграция с popup и т.п.

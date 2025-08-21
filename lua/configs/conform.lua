@@ -25,6 +25,11 @@ return {
         -- ["goimports-reviser"] = {
         --     prepend_args = { "-rm-unused" },
         -- },
+        ["php-cs-fixer"] = {
+            command = "php-cs-fixer",
+            args = { "fix", "$FILENAME", "--using-cache=no", "--quiet" },
+            stdin = false,
+        },
         golines = {
             prepend_args = { "--max-len=120" },
         },
