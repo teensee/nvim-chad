@@ -6,6 +6,7 @@ return {
         event = { "LspAttach", "InsertEnter" },
         opts = {
             sources = {
+                -- sut copitol suggestion on top
                 default = { "copilot", "lsp", "path", "snippets", "buffer" },
                 providers = {
                     copilot = {
@@ -16,8 +17,14 @@ return {
                     },
                 },
             },
+            completion = {
+                documentation = {
+                    auto_show = false, -- отключить автоматическое отображение документации
+                },
+            },
         },
     },
+    -- copilot inside blink cmp completions
     {
         "giuxtaposition/blink-cmp-copilot",
         after = { "copilot.lua" },

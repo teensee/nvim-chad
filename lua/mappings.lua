@@ -14,3 +14,9 @@ map("n", "<leader>ck", ":ObsidianToggleCheckbox<CR>", { desc = "Toggle checkbox"
 -- LazyGit
 map("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = "Toggle LazyGit" })
 
+-- Git операции через Gitsigns
+map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "Preview hunk" })
+map("n", "<leader>gs", ":Gitsigns stage_hunk<CR>", { desc = "Stage hunk" })
+map("n", "<leader>gu", ":Gitsigns undo_stage_hunk<CR>", { desc = "Undo stage hunk" })
+map("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", { desc = "Reset hunk" })
+map("n", "<leader>gb", ":Gitsigns blame_line<CR>", { desc = "Blame line" })

@@ -14,13 +14,13 @@ return {
         end,
         event = { "CmdlineEnter" },
         ft = { "go", "gomod" },
-        build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+        build = ':lua require("go.install").update_all_sync()',
     },
 
     -- php
     {
         "phpactor/phpactor",
-        enabled = false,
+        enabled = true,
         ft = "php",
         build = "composer install --optimize-autoloader",
         cmd = { "Phpactor" }, -- чтобы команду :Phpactor регистрировать
@@ -28,6 +28,11 @@ return {
             -- Опциональная интеграция с popup и т.п.
         end,
     },
+
+    -- tests framework
+    -- {
+    --     "vim-test/vim-test",
+    -- },
 
     -- snippets
     {

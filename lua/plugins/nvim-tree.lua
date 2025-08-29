@@ -11,13 +11,18 @@ return {
             },
         },
         renderer = {
-            group_empty = true,
+            group_empty = false,
         },
         git = {
             ignore = false,
         },
         view = {
             width = 50,
+        },
+
+        -- Отключить автоматическое выделение текущего файла
+        update_focused_file = {
+            enable = false, -- изменить на false чтобы отключить
         },
     },
 }
