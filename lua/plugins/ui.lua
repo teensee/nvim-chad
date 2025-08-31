@@ -16,11 +16,10 @@ return {
                 throttle = 1000 / 30,
                 view = "mini",
             },
-            -- override = {},
-            hover = { enabled = false },
-            signature = { enabled = false },
-            message = { enabled = false },
-            documentation = { enabled = false },
+            hover = { enabled = true },
+            message = { enabled = true },
+            documentation = { enabled = true },
+            signature = { enabled = false }, -- if "true" jumping cursor bugs here...
         },
     },
     dependencies = {

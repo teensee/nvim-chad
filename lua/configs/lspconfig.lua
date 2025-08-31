@@ -40,6 +40,30 @@ The official language server for the templ HTML templating language.
         },
     },
     pyright = {},
+
+    sqlls = {
+        cmd = { "sql-language-server", "up", "--method", "stdio" },
+        filetypes = { "sql", "mysql" },
+        root_dir = function(fname)
+            return lspconfig.util.root_pattern(".git", ".")(fname)
+        end,
+        settings = {
+            sqlLanguageServer = {
+                lint = {
+                    rules = {
+                        "align-column-to-the-first",
+                        "column-new-line",
+                        "linebreak-after-clause-keyword",
+                        "reserved-word-case",
+                        "space-surrounding-operators",
+                        "where-clause-new-line",
+                        "align-where-clause-to-the-first",
+                    },
+                },
+            },
+        },
+    },
+
     -- https://github.com/neovim/nvim-lspconfig/blob/master/lsp/phpactor.lua#L7
     phpactor = {
         cmd = { "phpactor", "language-server" },

@@ -19,6 +19,10 @@ return {
         css = { "prettier" },
         html = { "prettier" },
         yaml = { "prettier" },
+
+        -- sql
+        sql = { "sqlls" },
+        mysql = { "sqlls" },
     },
 
     formatters = {
@@ -33,6 +37,11 @@ return {
         golines = {
             prepend_args = { "--max-len=120" },
         },
+        -- sql_formatter = {
+        --     command = "sql-formatter",
+        --     args = { "--language", "sql" },
+        --     stdin = true,
+        -- },
     },
 
     format_on_save = function(bufnr)

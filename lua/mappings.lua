@@ -20,3 +20,8 @@ map("n", "<leader>gs", ":Gitsigns stage_hunk<CR>", { desc = "Stage hunk" })
 map("n", "<leader>gu", ":Gitsigns undo_stage_hunk<CR>", { desc = "Undo stage hunk" })
 map("n", "<leader>gr", ":Gitsigns reset_hunk<CR>", { desc = "Reset hunk" })
 map("n", "<leader>gb", ":Gitsigns blame_line<CR>", { desc = "Blame line" })
+
+-- dadbot
+map("n", "<leader>db", ":DBUIToggle<CR>", { desc = "Toggle Database UI" })
+map("n", "<leader>dq", ":DB<CR>", { desc = "Execute DB query" })
+map("v", "<leader>dq", ":'<,'>DB<CR>", { desc = "Execute selected query" })
